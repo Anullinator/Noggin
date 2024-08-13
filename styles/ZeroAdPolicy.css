@@ -1,0 +1,236 @@
+h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.policy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.policy-grid {
+    display: grid;
+    grid-template-columns: 450px 750px;
+    grid-template-rows: 100px 500px;
+    gap: 25px;
+}
+
+.policy-text {
+    font-size: 1.5rem;
+}
+
+.policy-image {
+    grid-row: span 2;
+
+}
+
+.big-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.ads-container {
+    z-index: 1;
+    width: 100%;
+    height: 87%;
+    max-width: 1900px;
+    max-height: 833px;
+    margin-top: 3.5%;
+    margin-left: 2.5px;
+}
+
+.ads-container-grid {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.x-button {
+    float: right;
+    color: rgb(0, 128, 255);
+    background-color: whitesmoke;
+    border: 1px solid rgb(0, 128, 255);
+    border-radius: 10%;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.x-button:hover {
+    border-color: rgb(0, 68, 255);
+    color: rgb(0, 68, 255);
+}
+.x-button:active {
+    border-color: rgb(0, 149, 255);
+    color: rgb(0, 149, 255);
+}
+
+.ad {
+    background-color: whitesmoke;
+    text-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Abby's*/
+.ad1 {
+    grid-column: span 3;
+    background: whitesmoke no-repeat url(../assets/Abbys-Ad.png);
+}
+
+.ad2 {
+    grid-row: span 4;
+}
+
+/*Federal Preserves*/
+.ad3 {
+    grid-column: span 4;
+    grid-row: span 2;
+    background: whitesmoke no-repeat url(../assets/FederalPreserves-Ad.png);
+}
+
+.ad4 {
+    grid-column: span 2;
+}
+
+.ad5 {
+    grid-column: span 3;
+}
+
+.ad6 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.ad7 {
+    grid-column: span 2;
+}
+
+.ad8 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.ad9 {
+    grid-row: span 3;
+}
+
+.ad10 {
+    grid-column: span 3;
+}
+
+.ad11 {
+    grid-column: span 2;
+}
+
+.ad12 {
+    grid-row: span 3;
+}
+
+.ad13 {
+    grid-row: span 5;
+}
+
+.ad14 {
+    grid-column: span 3;
+}
+
+.ad15 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.ad16 {
+    grid-column: span 4;
+}
+
+.ad17 {
+    grid-column: span 2;
+}
+
+.ad18 {
+    grid-column: span 2;
+}
+
+.ad19 {
+    grid-row: span 3;
+}
+
+.ad20 {
+    grid-column: span 6;
+    grid-row: span 2;
+}
+
+.ad21 {
+    grid-row: span 3;
+}
+
+.ad22 {
+    grid-column: span 5;
+    grid-row: span 3;
+}
+
+.ad23 {
+    grid-column: span 2;
+}
+
+.ad24 {
+    grid-row: span 2;
+}
+
+.ad25 {
+    grid-column: span 4;
+}
+
+.ad26 {
+    grid-row: span 2;
+}
+
+.ad27 {
+    grid-column: span 3;
+}
+
+.ad28 {
+    grid-column: span 3;
+}
+
+.ad29 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.ad30 {
+    grid-column: span 2;
+}
+
+.ad31 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.ad32 {
+    grid-column: span 5;
+}
+
+.ad33 {
+    grid-column: span 4;
+}
+
+.ad34 {
+    grid-column: span 3;
+}

@@ -1,0 +1,74 @@
+.background {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 38px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*Top Container*/
+.top-text-container {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 30px;
+    margin-bottom: 25px;
+    flex-direction: row;
+}
+
+#upgrade-button {
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    font-size: 11px;
+    background-color: rgb(45, 29, 29);
+    color: rgb(252, 220, 37);
+}
+
+#gold-counter {
+    justify-self: center;
+    align-self: center;
+    font-size: 11px;
+}
+
+/*Game*/
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 0px;
+}
+
+.game-button {
+    background-color: rgb(0, 165, 110);
+    border-radius: 0;
+    padding: 0;
+    font-size: 10px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+}
+
+/*Bottom Container*/
+.bottom-text-container {
+    margin-top: 20px;
+    display: grid;
+    width: 300px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 30px;
+}
+
+#gold-counter {
+    color: gold;
+}
