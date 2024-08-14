@@ -31,6 +31,10 @@ body {
     text-shadow: 1px 1px 1px rgb(0, 104, 202);
 }
 
+.page-wrapper {
+    min-height: 100vh;
+}
+
 h1 {
     text-align: center;
     margin-top: 250px;
