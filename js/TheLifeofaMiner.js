@@ -1,5 +1,6 @@
 var pickaxeDamage = 1;
 var gold = 0;
+var upgradeCost = 100;
 
 for (var i = 0; i < document.querySelectorAll(".game-button").length; i++) {
     document.querySelectorAll(".game-button")[i].addEventListener("click", function() {
@@ -92,3 +93,39 @@ for (var i = 0; i < document.querySelectorAll(".game-button").length; i++) {
         }
     });
 }
+
+document.querySelector("#upgrade-button").addEventListener("click", function() {
+    if (gold >= upgradeCost) {
+        if (this.innerHTML === "Upgrade Pickaxe $100") {
+            pickaxeDamage = 3;
+            gold = gold - upgradeCost;
+            document.querySelector("#gold-counter").innerHTML = "$" + gold;
+            upgradeCost = 250;
+            this.innerHTML = "Upgrade Pickaxe $250";
+        } else if (this.innerHTML === "Upgrade Pickaxe $250") {
+            pickaxeDamage = 5;
+            gold = gold - upgradeCost;
+            document.querySelector("#gold-counter").innerHTML = "$" + gold;
+            upgradeCost = 500;
+            this.innerHTML = "Upgrade Pickaxe $500";
+        } else if (this.innerHTML === "Upgrade Pickaxe $500") {
+            pickaxeDamage = 10;
+            gold = gold - upgradeCost;
+            document.querySelector("#gold-counter").innerHTML = "$" + gold;
+            upgradeCost = 1000;
+            this.innerHTML = "Upgrade Pickaxe $1000";
+        } else if (this.innerHTML === "Upgrade Pickaxe $1000") {
+            pickaxeDamage = 25;
+            gold = gold - upgradeCost;
+            document.querySelector("#gold-counter").innerHTML = "$" + gold;
+            upgradeCost = 2500;
+            this.innerHTML = "Upgrade Pickaxe $2500";
+        } else if (this.innerHTML === "Upgrade Pickaxe $2500") {
+            pickaxeDamage = 50;
+            gold = gold - upgradeCost;
+            document.querySelector("#gold-counter").innerHTML = "$" + gold;
+            upgradeCost = 5000;
+            this.innerHTML = "Upgrade Pickaxe $5000";
+        }
+    }
+});
