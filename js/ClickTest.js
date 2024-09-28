@@ -2,7 +2,6 @@ var num = "0";
 var score = 0;
 var gameStarted = 0;
 var timeStarted = 0;
-console.log(TEST);
 
 document.querySelector("#countdown").style.transition="opacity .5s";
 
